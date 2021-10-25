@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+<title>findMyAt</title>
+    </head>
+
+
+
+
+<div class="container">
+    <div class="level">
+        <div class="column">
+            <div class="level-item">
+                <h1 class="is-size-1">findMyAt</h1>
+            </div>
+            <div class="level-item">
+                <h2 class="is-size-3">connect with people in your classes</h2>
+            </div>
+
+
+
+        <div class="level-item">
+            <form method=POST action="{{ url_for('register') }}">
+                <div class="field">
+                   <p class="has-text-danger is-size-5">{{message}}</p>
+                </div>
+                <div class="field">
+                <label>first name</label>
+                <input type="text" class="input" name="firstName" placeholder="First Name">
+            </div>
+
+            <div class="field">
+              <label>last name</label>
+              <input type="text" class="input" name="lastName" placeholder="Last Name">
+          </div>
+
+          <div class="field">
+            <label>email</label>
+            <input type="text" class="input" name="email" placeholder="email">
+        </div>
+                
+                <div class="field">
+                    <label>Password</label>
+                    <br/>
+                    <input type="password" class="input" name="pass" placeholder="Password">
+                </div>
+                    <button type="submit" class="button is-primary">Register</button>
+            </form>
+        </div>
+
+            <br>
+            <div class="level-item">
+                Already have an account? <a href="{{ url_for('index') }}"> Login</a>.
+            </div>
+        </div>
+    </div>
+</div>
