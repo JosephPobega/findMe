@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ url_for('static', filename='header.css') }}" rel="stylesheet" type="text/css" />
+    
+
+<title>wavelength</title>
+    </head>
+
+
+    <body>
+
+
+        <div>
+            
+            <div class="header">
+              <div class="headerLogo">
+            
+            </div>
+                <div class="headerNav">
+                    <div class="nav">
+                        <a class="navBtn" href="{{ url_for('classes') }}">classes</a>
+                        <a class="navBtn" href="{{ url_for('connect') }}">connect</a>
+                        <a class="navBtn" href="{{ url_for('events') }}">events</a>
+                        <a class="navBtn navBtnOutline" href="{{ url_for('profile') }}">profile</a>
+                </div>
+            </div>
+            
+            <div class="headerBodySpacer"></div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    {% block body %}
+    {% endblock %}
+
+
+    </body>
+</html>

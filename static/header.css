@@ -1,0 +1,198 @@
+.header{
+    width: auto;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 0px 5px #cfcfcf;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.headerLogo{
+    width: auto;
+    height: auto;
+    min-width: 150px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    flex: 0;
+}
+
+.logo{
+    width: auto;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.headerNav{
+    width: auto;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    flex: 1;
+}
+
+@media screen and (min-width: 700px){
+    .nav{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        padding-right: 20px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .open{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        padding-right: 20px;
+    }
+
+    .navBtn{
+        height: auto;
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 3px;
+        font-weight: bold;
+        padding: 10px 10px;
+        border-radius: 500px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 2px solid rgba(0, 0, 0, 0);
+        color: #0077ff;
+        transition: 0.5s ease;
+    }
+    
+    .navBtnOutline{
+        border: 2px solid #0077ff;
+        margin-left: 20px;
+    }
+    
+    .navBtn:hover{
+        color: white;
+        background-color: #0077ff;
+    }
+
+    .hamButton{
+        display: none;
+    }
+
+    .closeButton{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .nav{
+        height: 100%;
+        width: 0vw;
+        position: fixed;
+        display: inline-block;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #0077ff;
+        margin: 0;
+        padding-top: 40px;
+        overflow-y: auto;
+        transition: 0.2s ease;
+        z-index: 2000;
+    }
+
+    .open{
+        height: 100%;
+        width: 75vw;
+        position: fixed;
+        display: inline-block;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #0077ff;
+        margin: 0;
+        padding-top: 40px;
+        overflow-y: auto;
+        transition: 1s ease;
+        z-index: 2000;
+    }
+
+    .navBtn{
+        height: auto;
+        width: 100%;
+        position: relative;
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 10px;
+        color: white;
+        text-align: center;
+        transition: 0.5s ease;
+        margin-bottom: 10px;
+    }
+
+    .navBtn:hover{
+        color: white;
+        background-color: #0057bb;
+    }
+
+    .hamButton{
+        height: auto;
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 3px;
+        font-weight: bold;
+        padding: 10px 10px;
+        border-radius: 500px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 2px solid rgba(0, 0, 0, 0);
+        color: #0077ff;
+        transition: 0.5s ease;
+        border: 2px solid #0077ff;
+        outline: none;
+        margin-right: 20px;
+    }
+
+    .closeButton{
+        height: auto;
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 3px;
+        font-weight: bold;
+        padding: 10px 10px;
+        border-radius: 500px;
+        border: 2px solid rgba(0, 0, 0, 0);
+        color: #0077ff;
+        background-color: white;
+        outline: none;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+}
+
+
+
+.headerBodySpacer{
+    width: auto;
+    height: 100px;
+    position: relative;
+    display: block;
+}
