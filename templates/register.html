@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-
+        <link href="login.html" rel="stylesheet">
 <title>findMyAt</title>
     </head>
 
@@ -23,7 +23,7 @@
 
 
 
-        <div class="level-item">
+         <div class="level-item">
             <form method=POST action="{{ url_for('register') }}">
                 <div class="field">
                    <p class="has-text-danger is-size-5">{{message}}</p>
@@ -54,7 +54,7 @@
 
             <br>
             <div class="level-item">
-                Already have an account? <a href="{{ url_for('login') }}"> Login</a>.
+                Already have an account? <a href="login.html"> Login</a>.
             </div>
         </div>
     </div>
